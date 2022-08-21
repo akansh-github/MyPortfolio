@@ -175,10 +175,10 @@ nav ul li a:hover {
 
 .image {
     width: 30%;
-    position: absolute;
+  position: absolute;
     right: 2.8%;
-    bottom: 8%;
-    border-radius: 50px 50px 0;
+    bottom: 35%;
+    
 
 }
 
@@ -453,6 +453,11 @@ input {
     text-align: center;
     font-size: 1rem;
 }
+.form .message{
+text-align: justify;
+
+    height: 10rem;
+}
 
 .form button {
     padding: 10px 30px;
@@ -572,9 +577,10 @@ input {
     width: fit-content;
 }
 .image{
-  
+  position: relative;
     width: 55%;
    left: 8%;
+   bottom: 10%;
     text-align: center;
 
 }
