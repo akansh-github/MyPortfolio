@@ -30,8 +30,10 @@ nav {
     backdrop-filter: blur(4px);
     height: 5rem;
     width: 100%;
-
+    top: 0;
+position: fixed;
     text-align: center;
+    z-index: 500;
 
 }
 
@@ -570,7 +572,7 @@ input {
     width: fit-content;
 }
 .image{
-    left: 0;
+  
     width: 55%;
    left: 8%;
     text-align: center;
