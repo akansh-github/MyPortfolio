@@ -16,8 +16,6 @@ html {
     width: 100%;
     height: 100vh;
     position: relative;
-    display: flex;
-    flex-direction: column;
 
 }
 
@@ -33,7 +31,7 @@ nav {
     height: 5rem;
     width: 100%;
     top: 0;
-    position: fixed;
+position: fixed;
     text-align: center;
     z-index: 500;
 
@@ -45,7 +43,6 @@ nav ul {
     /* padding-bottom: 1rem; */
 
     padding-top: 0.5rem;
-
 
 }
 
@@ -129,41 +126,17 @@ nav ul li a:hover {
 }
 
 .main {
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1;
-    height: auto;
-    margin: 5rem 2rem;
-
+    padding: 0 5%;
+    margin-top: 10%;
     font-size: 1.5rem;
     line-height: 26px;
-
     z-index: 9;
-  
-
-}
-
-.main-wrapper {
-    height: auto;
-  
-}
-
-.main-wrapper span {
-    height: max-content;
-    max-height: fit-content;
-}
-
-.image {
-    width: 40%;
-  
 }
 
 .main h1 {
-    font-size: 4.8rem;
+    font-size: 5rem;
     line-height: 6rem;
-    /* max-width: 70%; */
+    max-width: 70%;
 }
 
 .main a,
@@ -190,7 +163,7 @@ nav ul li a:hover {
 
 .main p {
     margin-top: 2rem;
-    max-width: 80%;
+    max-width: 50%;
     letter-spacing: 1px;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -200,6 +173,14 @@ nav ul li a:hover {
     color: #088d4f;
 }
 
+.image {
+    width: 30%;
+  position: absolute;
+    right: 2.8%;
+    bottom: 35%;
+    
+
+}
 
 .socials {
     margin: 1rem 1rem;
@@ -229,37 +210,20 @@ svg {
 
 /*---------------------------------------------*/
 
-#s1 {
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: row;
-
-
-    height: 100vh;
-    /* */
+.s1 {
+    position: relative;
+    text-align: justify;
+    height: 650px;
     background: rgb(224, 249, 217);
 
 }
 
-.aboutme-wrapper {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    float: right;
-    right: 0%;
-    top: 0%;
-    width: 70%;
-}
-
-
 .illustration {
-
     width: 25rem;
     height: 30rem;
- margin-left: 5rem;
- margin-top: 5rem;
-    position: relative;
+    margin-left: 8%;
+    margin-top: 10%;
+    position: absolute;
     border-radius: 10%;
     box-shadow: 3px 6px 8px rgba(128, 128, 128, 0.755);
     background-size: cover;
@@ -267,61 +231,48 @@ svg {
 }
 
 
-.aboutme {
-    display: flex;
-    flex-direction: column;
-
-    padding: 1rem;
-
-
-
-}
-
+.aboutme,
 .skills {
-    display: flex;
-    flex-direction: column;
-
-    padding: 1rem;
-
-    height: auto;
-
+    padding: 50px;
+    
 }
 
 .aboutme h3,
 .skills h3 {
     font-size: 3.1rem;
-    /* margin-bottom: 2%; */
+    margin-bottom: 2%;
     /* letter-spacing: 1px; */
     color: #0f643d;
-    text-align: center;
-
+    text-align: right;
+    margin-right: 20%;
     /* text-decoration:dotted underline; */
 }
 
-
+.skills h3 {
+    margin-right: 23%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
 
 .aboutme p {
 
-    /* position: absolute; */
+    position: absolute;
     text-align: left;
-    /* margin-left: 40%; */
-    
-    /* max-width: 70%; */
+    margin-left: 40%;
+    max-width: 70%;
     letter-spacing: 0.5px;
-  margin-left: 2rem;
-    font-size: 1.25rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .skills ul {
-    /* position: absolute; */
-    /* margin-left: 52%; */
-    align-self: center;
-    margin-left: 2rem;
+    position: absolute;
+    margin-left: 52%;
     line-height: 2.3rem;
     list-style: none;
     font-size: 1.2rem;
-    /* margin-bottom: 0%; */
+    margin-bottom: 0%;
 }
 
 .skills ul li {
@@ -502,9 +453,8 @@ input {
     text-align: center;
     font-size: 1rem;
 }
-
-.form .message {
-    text-align: justify;
+.form .message{
+text-align: justify;
 
     height: 10rem;
 }
@@ -567,9 +517,7 @@ input {
 */
 
 @media (max-width:768px) {
-#header{
-    width: 100%;
-}
+
     .checkbtn {
         display: block;
         color: #fff;
@@ -585,7 +533,7 @@ input {
     ul {
         position: fixed;
         width: 100%;
-        height: min-content;
+        height:min-content;
         background: #0f643d;
 
         top: 80px;
@@ -597,69 +545,64 @@ input {
 
     nav ul li {
         display: block;
-        margin: 1rem 0rem;
+        margin:1rem 0rem;
         line-height: 2rem;
         font-size: 1.5rem;
-
+      
     }
 
     nav ul li a {
         font-size: 1.5rem;
-
-    }
-    .main{
-        display: block;
-        padding: 1rem;
-        margin-top: 5rem;
+        color: #fff;
+      
     }
 
-    .main .main-wrapper h1{
-        font-size: 3rem;
+    #check:checked~ul {
+        left: 0;
 
     }
-    .image{
-        width: 50%;
-    }
+/* />>>>>>>>>>>>>>>>>>>>main <<<<<<<<<<<<<<<<<< */
 
-    #s1 {
-        height: fit-content;
-        display: block;
-    }
+.main{
+    display: block;
+    height: 100vh;
+    width: 100vw;
 
-    .illustration {
-        display: block;
-        width: 12rem;
-        height: 14rem;
-        align-self: center;
+}
+.main h1{
+    font-size: 3.8rem;
+}
+.main a{
+    display: block;
+    width: fit-content;
+}
+.image{
+  position: relative;
+    width: 55%;
+   left: 8%;
+   bottom: 10%;
+    text-align: center;
 
-    }
+}
+/*>>>>>>>>>>>S1 skills*/
+/* #s1{
+    height: 100vh;
+}
+.illustration{
+    display: block;
+    width: 12rem;
+    height: 14rem;
 
-    .aboutme {
-        height: auto;
-        display: block;
+}
+.aboutme{
+    display: block;
+}
+.skills{
+    display: block;
+}
+.skills h3{
 
-       
-    }
-    .aboutme-wrapper{
-        display: block;
-    }
-    .aboutme h3{
-        font-size: 1.5rem;
-    }
-    .aboutme p{
-        font-size: 1rem;
-    }
+float: left;
+} */
 
-    .skills {
-        display: block;
-        height: auto;
-    }
-    .skills ul{
-        display: block;
-    }
-
-    .skills h3 {
-
-        float: left;
-    }
 }
