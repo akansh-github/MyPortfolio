@@ -179,11 +179,11 @@ nav ul li a:hover {
 }
 
 .socials {
-  margin: 0rem 1rem;
+  margin: 1rem 1rem;
   font-size: 1.8rem;
   position: fixed;
   z-index: 100;
-  transform: translateY(-2rem);
+  transform: translateY(-15rem);
 }
 
 .socials ul li {
