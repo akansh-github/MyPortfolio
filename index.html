@@ -16,38 +16,40 @@
   <body>
     <div id="container">
       <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>NAV BAR<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li>
+            <a href="#container"><span> HOME</span></a>
+          </li>
+          <li>
+            <a href="#s1"><span> ABOUT ME</span></a>
+          </li>
+          <li>
+            <a href="#page3"><span> PORTFOLIO </span></a>
+          </li>
+          <li>
+            <a href="#heading2"><span> CONTACT </span></a>
+          </li>
+        </ul>
+      </nav>
       <div id="header">
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn"
-            ><i class="fas fa-bars"></i
-          ></label>
-          <ul>
-            <li>
-              <a href="#header"><span> HOME</span></a>
-            </li>
-            <li>
-              <a href="#s1"><span> ABOUT ME</span></a>
-            </li>
-            <li>
-              <a href="#page3"><span> PORTFOLIO </span></a>
-            </li>
-            <li>
-              <a href="#s3"><span> CONTACT </span></a>
-            </li>
-          </ul>
-        </nav>
         <div class="main" id="main">
-          <h1>I'm <span class="auto-type"></span></h1>
-          <p>
-            HOLA!, If you are looking for a web designer and developer, here is
-            a portfolio!!
-          </p>
+          <div class="main_text">
+            <h1>I'm <span class="auto-type"></span></h1>
+            <p>
+              HOLA!, If you are looking for a web designer and developer, here
+              is a portfolio!!
+            </p>
 
-          <a href="Resume.html" target="_blank">Download Resume</a>
-          <a href="#s3">Contact Me</a>
+            <a href="Resume.html" target="_blank">Download Resume</a>
+            <a href="#s3">Contact Me</a>
+          </div>
+          <div class="my_image">
+            <img src="my_img.png" class="image" alt="" width="80%" />
+          </div>
         </div>
-        <img src="my_img.png" class="image" alt="" />
 
         <!-- ================================socials========================== -->
         <div class="socials">
@@ -90,47 +92,47 @@
               Programming, UI/UX Designing,and other tech stuff.</span
             >
           </p>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>
-              HTML5
-              <div class="progress-bar">
-                <div class="overlay1">95%</div>
-              </div>
-            </li>
-            <li>
-              CSS3
-              <div class="progress-bar">
-                <div class="overlay2">90%</div>
-              </div>
-            </li>
-            <li>
-              Javascript ES6
-              <div class="progress-bar">
-                <div class="overlay3">80%</div>
-              </div>
-            </li>
-            <li>
-              React.js
-              <div class="progress-bar">
-                <div class="overlay4">50%</div>
-              </div>
-            </li>
-            <li>
-              Node.js
-              <div class="progress-bar">
-                <div class="overlay5">50%</div>
-              </div>
-            </li>
-            <li>
-              Bootstrap
-              <div class="progress-bar">
-                <div class="overlay6">70%</div>
-              </div>
-            </li>
-          </ul>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>
+                HTML5
+                <div class="progress-bar">
+                  <div class="overlay1">95%</div>
+                </div>
+              </li>
+              <li>
+                CSS3
+                <div class="progress-bar">
+                  <div class="overlay2">90%</div>
+                </div>
+              </li>
+              <li>
+                Javascript ES6
+                <div class="progress-bar">
+                  <div class="overlay3">80%</div>
+                </div>
+              </li>
+              <li>
+                React.js
+                <div class="progress-bar">
+                  <div class="overlay4">50%</div>
+                </div>
+              </li>
+              <li>
+                Node.js
+                <div class="progress-bar">
+                  <div class="overlay5">50%</div>
+                </div>
+              </li>
+              <li>
+                Bootstrap
+                <div class="progress-bar">
+                  <div class="overlay6">70%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <svg
@@ -219,7 +221,7 @@
       </div>
 
       <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>contact me<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-      <div class="heading2">
+      <div id="heading2">
         <h3>Contact Me</h3>
       </div>
 
