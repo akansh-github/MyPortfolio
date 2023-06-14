@@ -35,10 +35,6 @@ nav {
 }
 
 nav ul {
-  /* float: right;
-    margin-right: 20px; */
-  /* padding-bottom: 1rem; */
-
   padding-top: 0.5rem;
 }
 
@@ -64,39 +60,6 @@ nav ul li a {
   /* text-transform: uppercase; */
 }
 
-/*---------------------------*/
-/* nav{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 200;
-    box-shadow: 1px 5px 20px rgba(99, 99, 99, 0.178);
-    backdrop-filter: blur(4px);
-    position: sticky;
-    top: 0;
-}
-nav ul{
-    flex: 1;
-    text-align: center;
-    padding: 1rem;
-
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0.2rem 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 550;
-    color: black;
-   
-    z-index: 12;
-    padding: 1rem;
-} */
 nav ul li a:hover {
   /* color: #088d4f; */
   color: #fff;
@@ -123,18 +86,19 @@ nav ul li a:hover {
   /* padding: 0 5%; */
   width: 100%;
 
-  margin-top: 5rem;
+  margin-top: 4rem;
 
   font-size: 1.5rem;
   line-height: 26px;
 
   display: flex;
+  flex-direction: row-reverse;
 }
 .main_text {
-  margin: 2rem;
+  margin-left: 5rem;
 }
 .my_image {
-  width: fit-content;
+  /* width: fit-content; */
   width: 50%;
 }
 
@@ -168,7 +132,7 @@ nav ul li a:hover {
 
 .main p {
   margin-top: 2rem;
-  max-width: 50%;
+  max-width: 80%;
   letter-spacing: 1px;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -206,11 +170,12 @@ svg {
 /*---------------------------------------------*/
 
 .s1 {
-  padding-top: 5rem;
+  padding-top: 1rem;
   height: 100vh;
   text-align: justify;
   background: rgb(224, 249, 217);
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -227,6 +192,8 @@ svg {
 }
 .aboutme {
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutme p {
@@ -307,7 +274,11 @@ svg {
   width: 70%;
 }
 
-/*-----------------------------------------------------*/
+/*-------------------------MY PROJECTS----------------------------*/
+
+.my-projects {
+  margin-left: 0;
+}
 .heading h3 {
   font-size: 40px;
   text-align: center;
@@ -325,17 +296,17 @@ svg {
 
 .s2 {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  padding: 2rem;
+  justify-content: space-evenly;
+
+  padding: 3rem;
   width: 100%;
 }
 
 .s2 img {
   height: 300px;
   /* width: 500px; */
-  min-width: 200px;
-  margin-left: 20%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 3px 5px 8px rgba(128, 128, 128, 0.755);
 }
@@ -361,7 +332,9 @@ svg {
   flex-direction: row-reverse;
   background: rgb(242, 250, 240);
 }
-
+#s2 img {
+  margin: 1rem;
+}
 #clock {
   margin-left: 1rem;
 }
@@ -388,7 +361,7 @@ svg {
   text-decoration: none;
 }
 
-/*---------------------------*/
+/*------------CONTACT US---------------*/
 
 #heading2 {
   padding-top: 5rem;
@@ -404,10 +377,10 @@ svg {
 
 .s3 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  margin-left: 6%;
+  padding: 4rem;
   /* margin-top: 2%; */
 }
 
@@ -499,65 +472,42 @@ input {
 ///////////////////////////
 */
 
-@media (max-width: 768px) {
-  /* .checkbtn {
-    display: block;
-    color: #fff;
-  }
-
-  nav {
-    width: 100vw;
-    background-color: #0f643d;
-    border-bottom: 2px solid white;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: min-content;
-    background: #0f643d;
-
-    top: 80px;
-    left: 0;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 1rem 0rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
-  }
-
-  nav ul li a {
-    font-size: 1.5rem;
-    color: #fff;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  } */
-  /* />>>>>>>>>>>>>>>>>>>>main <<<<<<<<<<<<<<<<<< */
-  /* 
+@media (max-width: 600px) {
   .main {
     display: block;
-    height: 100vh;
-    width: 100vw;
+
+    margin-top: 1rem;
   }
-  .main h1 {
-    font-size: 3.8rem;
-  }
-  .main a {
+  /* .main_text h1 {
     display: block;
-    width: fit-content;
-  }
-  .image {
-    position: relative;
-    width: 55%;
-    left: 8%;
-    bottom: 10%;
-    text-align: center;
   } */
+  .main h1 {
+    font-size: 3rem;
+    /* line-height: 6rem;
+    width: 100%; */
+  }
+  .my_image {
+    margin-left: 100px;
+    width: 100%;
+  }
+  .main p {
+    margin-top: 2rem;
+    max-width: 100%;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .s1 {
+    display: block;
+  }
+  .skills {
+    margin-left: 0rem;
+  }
+  .s2 {
+    display: block;
+  }
+  .s3 {
+    display: block;
+    flex-direction: column-reverse;
+  }
 }
